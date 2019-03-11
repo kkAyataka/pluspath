@@ -1,0 +1,10 @@
+
+# Mac/Xcode
+.DS_Store
+
+## Build
+build
+DerivedData
+
+# Xcode project
+xcuserdata
