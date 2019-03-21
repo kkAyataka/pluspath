@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{1334f19d-7f9e-44e8-aa4b-4d797ee1ef07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{5637872e-1297-4b74-8fa6-611ff8ca0c80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\lib">
+      <UniqueIdentifier>{90e5bf97-fd3e-4724-854b-f1a088cd2be6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\lib\include">
+      <UniqueIdentifier>{f1e6fb4d-5efb-421b-b4d0-0b77d0eeaff0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\lib\include\gtest">
+      <UniqueIdentifier>{aebd2c67-a418-4a15-b580-b0d52d85f1f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\lib\include\pluspath">
+      <UniqueIdentifier>{440a222f-3667-401f-9fe6-d7fc90036782}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\lib\include\pluspath\detail">
+      <UniqueIdentifier>{76b71dbc-fa6a-4cab-9e0d-ec90e2b76889}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\unit_test\lib\include\gtest\gtest.h">
+      <Filter>lib\lib\include\gtest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\pluspath\pluspath.hpp">
+      <Filter>lib\lib\include\pluspath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\pluspath\pluspath-type.hpp">
+      <Filter>lib\lib\include\pluspath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\pluspath\detail\pluspath-win.hpp">
+      <Filter>lib\lib\include\pluspath\detail</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\unit_test\lib\include\gtest\gtest-all.cc">
+      <Filter>lib\lib\include\gtest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\unit_test\src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\unit_test\src\test-pluspath.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
