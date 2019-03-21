@@ -6,7 +6,7 @@
 
 #import "pluspath/detail/pluspath-mac.h"
 
-#include <Foundation/Foundation.h>
+#import <Foundation/Foundation.h>
 
 static int NSString_to_cbuffer(NSString * str, char * path_buf, unsigned long * path_buf_size) {
     if (!str) {
