@@ -12,6 +12,7 @@
 #include <vector>
 
 #ifdef _MSC_VER
+    #include "detail\pluspath-win.hpp"
 #elif __APPLE__
     #include "detail/pluspath-mac.h"
     #include "detail/pluspath-unix.hpp"
@@ -45,7 +46,6 @@ inline std::string get_dir(get_dir_f f) {
 inline StringVec list_paths(const std::string& target_path, const ListMode mode) {
     return detail::list_paths(target_path, mode);
 }
-
 
 inline std::string get_executable_dir() {
     return detail::get_dir(pluspath_get_executable_dir);
