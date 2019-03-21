@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9E7469522242365B00462EF6 /* pluspath-mac.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E7469502242365600462EF6 /* pluspath-mac.m */; };
-		9E74696E224236AD00462EF6 /* test-pluspath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E7469622242367F00462EF6 /* test-pluspath.cpp */; };
-		9E7469712242379300462EF6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E74696F224236DF00462EF6 /* main.cpp */; };
 		9E746975224238FC00462EF6 /* libpluspath_s.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E74693A2242362200462EF6 /* libpluspath_s.a */; };
-		9E74697622423C7A00462EF6 /* gtest-all.cc in Sources */ = {isa = PBXBuildFile; fileRef = 9E7469602242367F00462EF6 /* gtest-all.cc */; };
+		9E7469812243D64600462EF6 /* pluspath-mac.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E7469802243D64600462EF6 /* pluspath-mac.m */; };
+		9E7469922243D65700462EF6 /* gtest-all.cc in Sources */ = {isa = PBXBuildFile; fileRef = 9E74698E2243D65700462EF6 /* gtest-all.cc */; };
+		9E7469932243D65700462EF6 /* test-pluspath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E7469902243D65700462EF6 /* test-pluspath.cpp */; };
+		9E7469942243D65700462EF6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E7469912243D65700462EF6 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,16 +38,16 @@
 
 /* Begin PBXFileReference section */
 		9E74693A2242362200462EF6 /* libpluspath_s.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libpluspath_s.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		9E7469482242364B00462EF6 /* pluspath-type.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "pluspath-type.hpp"; sourceTree = "<group>"; };
-		9E7469492242364B00462EF6 /* pluspath.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = pluspath.hpp; sourceTree = "<group>"; };
-		9E74694B2242364B00462EF6 /* pluspath-mac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pluspath-mac.h"; sourceTree = "<group>"; };
-		9E74694D2242364B00462EF6 /* pluspath-unix.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "pluspath-unix.hpp"; sourceTree = "<group>"; };
-		9E7469502242365600462EF6 /* pluspath-mac.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "pluspath-mac.m"; sourceTree = "<group>"; };
-		9E74695F2242367F00462EF6 /* gtest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gtest.h; sourceTree = "<group>"; };
-		9E7469602242367F00462EF6 /* gtest-all.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "gtest-all.cc"; sourceTree = "<group>"; };
-		9E7469622242367F00462EF6 /* test-pluspath.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "test-pluspath.cpp"; sourceTree = "<group>"; };
 		9E7469672242369300462EF6 /* unit_test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = unit_test; sourceTree = BUILT_PRODUCTS_DIR; };
-		9E74696F224236DF00462EF6 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		9E7469792243D62E00462EF6 /* pluspath-type.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "pluspath-type.hpp"; sourceTree = "<group>"; };
+		9E74697A2243D62E00462EF6 /* pluspath.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = pluspath.hpp; sourceTree = "<group>"; };
+		9E74697C2243D62E00462EF6 /* pluspath-mac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pluspath-mac.h"; sourceTree = "<group>"; };
+		9E74697E2243D62E00462EF6 /* pluspath-unix.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "pluspath-unix.hpp"; sourceTree = "<group>"; };
+		9E7469802243D64600462EF6 /* pluspath-mac.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "pluspath-mac.m"; sourceTree = "<group>"; };
+		9E74698D2243D65700462EF6 /* gtest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gtest.h; sourceTree = "<group>"; };
+		9E74698E2243D65700462EF6 /* gtest-all.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "gtest-all.cc"; sourceTree = "<group>"; };
+		9E7469902243D65700462EF6 /* test-pluspath.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "test-pluspath.cpp"; sourceTree = "<group>"; };
+		9E7469912243D65700462EF6 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,9 +72,9 @@
 		9E7469312242362200462EF6 = {
 			isa = PBXGroup;
 			children = (
-				9E7469462242364B00462EF6 /* include */,
-				9E74694E2242365600462EF6 /* src */,
-				9E7469532242367F00462EF6 /* unit_test */,
+				9E7469772243D62E00462EF6 /* include */,
+				9E74697F2243D64600462EF6 /* src */,
+				9E7469822243D65700462EF6 /* unit_test */,
 				9E74693B2242362200462EF6 /* Products */,
 				9E746974224238FC00462EF6 /* Frameworks */,
 			);
@@ -89,92 +89,92 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9E7469462242364B00462EF6 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				9E7469472242364B00462EF6 /* pluspath */,
-			);
-			name = include;
-			path = ../../include;
-			sourceTree = "<group>";
-		};
-		9E7469472242364B00462EF6 /* pluspath */ = {
-			isa = PBXGroup;
-			children = (
-				9E7469482242364B00462EF6 /* pluspath-type.hpp */,
-				9E7469492242364B00462EF6 /* pluspath.hpp */,
-				9E74694A2242364B00462EF6 /* detail */,
-			);
-			path = pluspath;
-			sourceTree = "<group>";
-		};
-		9E74694A2242364B00462EF6 /* detail */ = {
-			isa = PBXGroup;
-			children = (
-				9E74694B2242364B00462EF6 /* pluspath-mac.h */,
-				9E74694D2242364B00462EF6 /* pluspath-unix.hpp */,
-			);
-			path = detail;
-			sourceTree = "<group>";
-		};
-		9E74694E2242365600462EF6 /* src */ = {
-			isa = PBXGroup;
-			children = (
-				9E7469502242365600462EF6 /* pluspath-mac.m */,
-			);
-			name = src;
-			path = ../../src;
-			sourceTree = "<group>";
-		};
-		9E7469532242367F00462EF6 /* unit_test */ = {
-			isa = PBXGroup;
-			children = (
-				9E74695B2242367F00462EF6 /* lib */,
-				9E7469612242367F00462EF6 /* src */,
-			);
-			name = unit_test;
-			path = ../../unit_test;
-			sourceTree = "<group>";
-		};
-		9E74695B2242367F00462EF6 /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				9E74695C2242367F00462EF6 /* include */,
-			);
-			path = lib;
-			sourceTree = "<group>";
-		};
-		9E74695C2242367F00462EF6 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				9E74695D2242367F00462EF6 /* gtest */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		9E74695D2242367F00462EF6 /* gtest */ = {
-			isa = PBXGroup;
-			children = (
-				9E74695F2242367F00462EF6 /* gtest.h */,
-				9E7469602242367F00462EF6 /* gtest-all.cc */,
-			);
-			path = gtest;
-			sourceTree = "<group>";
-		};
-		9E7469612242367F00462EF6 /* src */ = {
-			isa = PBXGroup;
-			children = (
-				9E74696F224236DF00462EF6 /* main.cpp */,
-				9E7469622242367F00462EF6 /* test-pluspath.cpp */,
-			);
-			path = src;
-			sourceTree = "<group>";
-		};
 		9E746974224238FC00462EF6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9E7469772243D62E00462EF6 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				9E7469782243D62E00462EF6 /* pluspath */,
+			);
+			name = include;
+			path = ../include;
+			sourceTree = "<group>";
+		};
+		9E7469782243D62E00462EF6 /* pluspath */ = {
+			isa = PBXGroup;
+			children = (
+				9E7469792243D62E00462EF6 /* pluspath-type.hpp */,
+				9E74697A2243D62E00462EF6 /* pluspath.hpp */,
+				9E74697B2243D62E00462EF6 /* detail */,
+			);
+			path = pluspath;
+			sourceTree = "<group>";
+		};
+		9E74697B2243D62E00462EF6 /* detail */ = {
+			isa = PBXGroup;
+			children = (
+				9E74697C2243D62E00462EF6 /* pluspath-mac.h */,
+				9E74697E2243D62E00462EF6 /* pluspath-unix.hpp */,
+			);
+			path = detail;
+			sourceTree = "<group>";
+		};
+		9E74697F2243D64600462EF6 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				9E7469802243D64600462EF6 /* pluspath-mac.m */,
+			);
+			name = src;
+			path = ../src;
+			sourceTree = "<group>";
+		};
+		9E7469822243D65700462EF6 /* unit_test */ = {
+			isa = PBXGroup;
+			children = (
+				9E74698A2243D65700462EF6 /* lib */,
+				9E74698F2243D65700462EF6 /* src */,
+			);
+			name = unit_test;
+			path = ../unit_test;
+			sourceTree = "<group>";
+		};
+		9E74698A2243D65700462EF6 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				9E74698B2243D65700462EF6 /* include */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		9E74698B2243D65700462EF6 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				9E74698C2243D65700462EF6 /* gtest */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		9E74698C2243D65700462EF6 /* gtest */ = {
+			isa = PBXGroup;
+			children = (
+				9E74698D2243D65700462EF6 /* gtest.h */,
+				9E74698E2243D65700462EF6 /* gtest-all.cc */,
+			);
+			path = gtest;
+			sourceTree = "<group>";
+		};
+		9E74698F2243D65700462EF6 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				9E7469902243D65700462EF6 /* test-pluspath.cpp */,
+				9E7469912243D65700462EF6 /* main.cpp */,
+			);
+			path = src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,7 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E7469522242365B00462EF6 /* pluspath-mac.m in Sources */,
+				9E7469812243D64600462EF6 /* pluspath-mac.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,9 +273,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E7469712242379300462EF6 /* main.cpp in Sources */,
-				9E74696E224236AD00462EF6 /* test-pluspath.cpp in Sources */,
-				9E74697622423C7A00462EF6 /* gtest-all.cc in Sources */,
+				9E7469932243D65700462EF6 /* test-pluspath.cpp in Sources */,
+				9E7469942243D65700462EF6 /* main.cpp in Sources */,
+				9E7469922243D65700462EF6 /* gtest-all.cc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,7 +346,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
-				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../include\"";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../include\"";
 			};
 			name = Debug;
 		};
@@ -399,7 +399,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
-				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../include\"";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../include\"";
 			};
 			name = Release;
 		};
@@ -429,8 +429,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = (
-					"\"$(SRCROOT)/../../include\"",
-					"\"$(SRCROOT)/../../unit_test/lib/include\"",
+					"\"$(SRCROOT)/../include\"",
+					"\"$(SRCROOT)/../unit_test/lib/include\"",
 				);
 			};
 			name = Debug;
@@ -441,8 +441,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = (
-					"\"$(SRCROOT)/../../include\"",
-					"\"$(SRCROOT)/../../unit_test/lib/include\"",
+					"\"$(SRCROOT)/../include\"",
+					"\"$(SRCROOT)/../unit_test/lib/include\"",
 				);
 			};
 			name = Release;
