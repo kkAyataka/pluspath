@@ -1,5 +1,12 @@
+# Windows/Visual Studio
+# --------------------------------------
+build
+*.vs
+*.opensdf
+*.sdf
 
 # Mac/Xcode
+#---------------------------------------
 .DS_Store
 
 ## Build

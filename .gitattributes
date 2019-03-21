@@ -1,2 +1,8 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Visual Studio files
+*.sln text eol=crlf
+*.vcxproj text=crlf
+*.vcxproj.filters text=crlf
+
