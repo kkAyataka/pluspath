@@ -14,7 +14,7 @@ int pluspath_get_home_dir(char * path_buf, unsigned long * path_buf_size);
 int pluspath_get_tmp_dir(char * path_buf, unsigned long * path_buf_size);
 int pluspath_get_desktop_dir(char * path_buf, unsigned long * path_buf_size);
 int pluspath_get_user_app_data_dir(char * path_buf, unsigned long * path_buf_size);
-
+int pluspath_get_common_app_data_dir(char * path_buf, unsigned long * path_buf_size);
 
 #ifdef __cplusplus
 }

@@ -71,6 +71,10 @@ inline std::string get_user_app_data_dir() {
     return detail::get_dir(pluspath_get_user_app_data_dir);
 }
 
+inline std::string get_common_app_data_dir() {
+    return detail::get_dir(pluspath_get_common_app_data_dir);
+}
+
 } // namespace pluspath
 
 #endif // PLUSPATH_HPP_

@@ -79,3 +79,10 @@ int pluspath_get_user_app_data_dir(char * path_buf, unsigned long * path_buf_siz
         return NSString_to_cbuffer(path, path_buf, path_buf_size);
     }
 }
+
+int pluspath_get_common_app_data_dir(char * path_buf, unsigned long * path_buf_size) {
+    @autoreleasepool {
+        NSString * path = get_special_dir(NSApplicationSupportDirectory, NSLocalDomainMask);
+        return NSString_to_cbuffer(path, path_buf, path_buf_size);
+    }
+}

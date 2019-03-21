@@ -16,6 +16,7 @@ TEST(pluspath, check_paths) {
     std::cout << "tmp dir: " << pluspath::get_tmp_dir() << std::endl;
     std::cout << "desktop dir: " << pluspath::get_desktop_dir() << std::endl;
     std::cout << "user app data dir: " << pluspath::get_user_app_data_dir() << std::endl;
+    std::cout << "common app data dir: " << pluspath::get_common_app_data_dir() << std::endl;
 }
 
 TEST(pluspath, list_paths) {
