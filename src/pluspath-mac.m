@@ -61,7 +61,15 @@ int pluspath_get_home_dir(char * path_buf, unsigned long int * path_buf_size) {
 
 int pluspath_get_tmp_dir(char * path_buf, unsigned long int * path_buf_size) {
     @autoreleasepool {
-        NSString * path = NSTemporaryDirectory();
+        NSMutableString * path = [NSMutableString stringWithString: NSTemporaryDirectory()];
+        if (path && [path length] > 0) {
+            const unsigned long last_index = [path length] - 1;
+            if ([path characterAtIndex: last_index] == '/') {
+                [path deleteCharactersInRange: NSMakeRange(last_index, 1)];
+            }
+
+        }
+
         return NSString_to_cbuffer(path, path_buf, path_buf_size);
     }
 }
