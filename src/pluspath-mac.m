@@ -26,13 +26,13 @@ static int NSString_to_cbuffer(NSString * str, char * path_buf, unsigned long * 
     }
 }
 
-static NSString * get_special_dir(const NSSearchPathDirectory dir_key, const NSSearchPathDomainMask domain) {
+static int get_special_dir(const NSSearchPathDirectory dir_key, const NSSearchPathDomainMask domain, char * buf, unsigned long * buf_size) {
     NSArray<NSURL *> * urls = [[NSFileManager defaultManager] URLsForDirectory:dir_key inDomains: domain];
     if (urls && [urls count] > 0) {
-        return [[urls objectAtIndex: 0] path];
+        return NSString_to_cbuffer([[urls objectAtIndex: 0] path], buf, buf_size);
     }
 
-    return @"";
+    return 0;
 }
 
 int pluspath_get_executable_dir(char * path_buf, unsigned long int * path_buf_size) {
@@ -68,21 +68,18 @@ int pluspath_get_tmp_dir(char * path_buf, unsigned long int * path_buf_size) {
 
 int pluspath_get_desktop_dir(char * path_buf, unsigned long * path_buf_size) {
     @autoreleasepool {
-        NSString * path = get_special_dir(NSDesktopDirectory, NSUserDomainMask);
-        return NSString_to_cbuffer(path, path_buf, path_buf_size);
+        return get_special_dir(NSDesktopDirectory, NSUserDomainMask, path_buf, path_buf_size);
     }
 }
 
 int pluspath_get_user_app_data_dir(char * path_buf, unsigned long * path_buf_size) {
     @autoreleasepool {
-        NSString * path = get_special_dir(NSApplicationSupportDirectory, NSUserDomainMask);
-        return NSString_to_cbuffer(path, path_buf, path_buf_size);
+        return get_special_dir(NSApplicationSupportDirectory, NSUserDomainMask, path_buf, path_buf_size);
     }
 }
 
 int pluspath_get_common_app_data_dir(char * path_buf, unsigned long * path_buf_size) {
     @autoreleasepool {
-        NSString * path = get_special_dir(NSApplicationSupportDirectory, NSLocalDomainMask);
-        return NSString_to_cbuffer(path, path_buf, path_buf_size);
+        return get_special_dir(NSApplicationSupportDirectory, NSLocalDomainMask, path_buf, path_buf_size);
     }
 }
