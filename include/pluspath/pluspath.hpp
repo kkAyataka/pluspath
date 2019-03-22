@@ -37,6 +37,22 @@ inline std::string get_dir(get_dir_f f) {
 
 } // namespace pluspath::detail
 
+/**
+ * Gets current directory path
+ * @return Current directory path
+ */
+inline std::string get_current_dir() {
+    return detail::get_current_dir();
+}
+
+/**
+ * Set/Changes current directory
+ * @param [in] dir_path New current directory psth
+ * @return true is succeeded, false is failed.
+ */
+inline bool set_current_dir(const std::string & dir_path) {
+    return detail::set_current_dir(dir_path);
+}
 
 /**
  * List file paths

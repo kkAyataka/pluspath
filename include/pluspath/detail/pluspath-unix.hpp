@@ -53,6 +53,19 @@ inline StringVec list_paths(const std::string &target_path, const ListMode mode)
     return paths;
 }
 
+inline std::string get_current_dir() {
+    std::vector<char> buf(1024);
+    for (int i = 0; i < 6 && getcwd(&buf[0], buf.size()) != NULL; ++i) {
+        buf.resize(buf.size() * 2);
+    }
+
+    return &buf[0];
+}
+
+inline bool set_current_dir(const std::string & dir_path){
+    return chdir(dir_path.c_str()) == 0;
+}
+
 }} // namespace pluspath::detail
 
 #endif // PLUSPATH_UNIX_H__
