@@ -194,7 +194,7 @@ inline std::string get_user_pictures_dir() {
 inline std::string get_user_movies_dir() {
     return detail::get_dir(pluspath_get_user_movies_dir);
 }
-#define get_user_movies_dir get_user_videos_dir ///< videos version
+#define get_user_videos_dir get_user_movies_dir ///< videos version
 
 } // namespace pluspath
 
