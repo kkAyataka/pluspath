@@ -16,6 +16,13 @@ int pluspath_get_desktop_dir(char * path_buf, unsigned long * path_buf_size);
 int pluspath_get_user_app_data_dir(char * path_buf, unsigned long * path_buf_size);
 int pluspath_get_common_app_data_dir(char * path_buf, unsigned long * path_buf_size);
 
+int pluspath_get_download_dir(char * path_buf, unsigned long * path_buf_size);
+int pluspath_get_user_documents_dir(char * path_buf, unsigned long * path_buf_size);
+int pluspath_get_user_music_dir(char * path_buf, unsigned long * path_buf_size);
+int pluspath_get_user_pictures_dir(char * path_buf, unsigned long * path_buf_size);
+int pluspath_get_user_movies_dir(char * path_buf, unsigned long * path_buf_size);
+
 #ifdef __cplusplus
 }
 #endif // __cplusplus
+

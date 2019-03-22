@@ -91,3 +91,33 @@ int pluspath_get_common_app_data_dir(char * path_buf, unsigned long * path_buf_s
         return get_special_dir(NSApplicationSupportDirectory, NSLocalDomainMask, path_buf, path_buf_size);
     }
 }
+
+int pluspath_get_download_dir(char * path_buf, unsigned long * path_buf_size) {
+    @autoreleasepool {
+        return get_special_dir(NSDownloadsDirectory, NSUserDomainMask, path_buf, path_buf_size);
+    }
+}
+
+int pluspath_get_user_documents_dir(char * path_buf, unsigned long * path_buf_size) {
+    @autoreleasepool {
+        return get_special_dir(NSDocumentDirectory, NSUserDomainMask, path_buf, path_buf_size);
+    }
+}
+
+int pluspath_get_user_music_dir(char * path_buf, unsigned long * path_buf_size) {
+    @autoreleasepool {
+        return get_special_dir(NSMusicDirectory, NSUserDomainMask, path_buf, path_buf_size);
+    }
+}
+
+int pluspath_get_user_pictures_dir(char * path_buf, unsigned long * path_buf_size) {
+    @autoreleasepool {
+        return get_special_dir(NSPicturesDirectory, NSUserDomainMask, path_buf, path_buf_size);
+    }
+}
+
+int pluspath_get_user_movies_dir(char * path_buf, unsigned long * path_buf_size) {
+    @autoreleasepool {
+        return get_special_dir(NSMoviesDirectory, NSUserDomainMask, path_buf, path_buf_size);
+    }
+}
